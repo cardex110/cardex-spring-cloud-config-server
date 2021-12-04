@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: cardex-spring-cloud-config-server
+  cloud:
+    config:
+      git:
+        uri: https://github.com/cardex110/environment-variable-repo.git
+
+server:
+  port: ${port:8888}
